@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "splunk": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/lfjuarez/splunk-mcp-readonly",
+        "splunk-mcp"
+      ],
+      "env": {
+        "SPLUNK_URL": "https://splunk.example.com:8089",
+        "SPLUNK_TOKEN": "<token>",
+        "SPLUNK_VERIFY_TLS": "true"
+      }
+    }
+  }
+}
